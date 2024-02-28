@@ -1,13 +1,272 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/aebaa313fa.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    .logo h3 {
+      font-family: "Pacifico", cursive;
+    }
+    .links a{
+      transition: all ease 0.4s;
+    }
+    /* swipper for page 1  */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content h2{
+      font-family: "Pacifico", cursive;
+    }
+  </style>
 </head>
+
+
 <body>
-  
+  <div id="main">
+    <div class="page1 h-[100vh] bg-white w-[100vw] relative">
+      <div class="navbar h-[10%] w-[100%] bg-zinc-100 flex items-center justify-between px-[4vw] text-black">
+        <div class="logo flex items-center"><img class="h-16"
+            src="https://imgs.search.brave.com/OoO60jggTXtZpTWQnbONEaj9PpfvDvG03xXlgWfoN7U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9y/VExuUm9MVDgucG5n">
+          <h3 class="leading-tight text-xl">Pizza You <br><span>Love</span></h3>
+        </div>
+       <div class="sidebar flex items-center z-[9]">
+        <i class="fa-solid fa-bars menuIcon cursor-pointer text-3xl px-3 py-2 rounded-full"></i>
+        <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl px-3 py-2  rounded-full bg-yellow-600"></i>
+       </div>
+      </div>
+      <!-- center elements of page 1 -->
+      <div class="center h-[90%] w-full flex">
+        <div class="left w-[55%] h-full text-left text-black">
+         <div class="content mt-[30vh] ml-[10vw]">
+          <h1 class="text-8xl font-bold">Da Pizzeria</h1>
+          <h2 class="text-5xl mt-1">Feeling Hungry! </h2>
+          <button class="text-2xl mt-5 bg-zinc-900 text-white p-4 rounded-full">Order Now</button>
+         </div>
+        </div>
+        <div class="right h-full w-[45%] px-4">
+         <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="h-full  w-full " src="https://media.gettyimages.com/id/85637169/photo/veggie-pizza.jpg?s=612x612&w=0&k=20&c=NgtCEoDBUUT7mNaWNjY3VEuD81-2-4wZUms-_xfbxZk="></div>
+            <div class="swiper-slide"><img class="h-full  w-full " src="https://media.gettyimages.com/id/86057068/photo/pizza-with-fresh-tomato-onion-and-basil.jpg?s=612x612&w=0&k=20&c=AsS21tnNhp_DDuA4iOtVcU19FO6kqxxXPCGJ7qdIW1o="></div>
+            <div class="swiper-slide"><img class="h-full  w-full " src="https://media.gettyimages.com/id/182148711/photo/pizza-from-the-top-deluxe.jpg?s=612x612&w=0&k=20&c=uI6keT3AMInUhQAq21IBHki2krITOzgMAKU9oeXjQns="></div>
+            <div class="swiper-slide"><img class="h-full  w-full " src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg="></div>
+          </div>
+        </div>
+       </div>
+      </div>
+
+      <!-- side page or say menu page -->
+      <div style="transition: all ease 0.4s;"
+        class="menuBar h-[100%] w-[40%] bg-zinc-800 absolute top-0 right-[-60%] flex items-center justify-center border rounded-xl border-zinc-600 z-[9]">
+        <i class="fa-solid fa-xmark closeMenu absolute cursor-pointer absolute top-4 right-12 text-4xl text-white bg-zinc-600 rounded-full px-4 py-2"></i>
+        <div class="links flex flex-col text-white text-center gap-6 ">
+          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Home</a>
+          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Offers</a>
+          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">My Orders</a>
+          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Logout</a>
+        </div>
+      </div>
+    </div>
+    <div class="page2 min-h-[100vh] w-[100vw] bg-white p-12 grid grid-cols-4 p-12" >
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+      <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
+        <img class="w-[80%]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" alt="">
+        <h3 class="text-xl font-bold">Margherita</h3>
+        <h4 class="bg-zinc-100 px-2 rounded-full mt-2 text-zinc-700">SMALL</h4>
+        <div class="info flex justify-around w-full items-center mt-7">
+          <h5 class="text-xl text-zinc-700">255$</h5>
+          <button style="transition: all ease 0.4s;" class="flex gap-2 items-center gap-2 border border-orange-600 text-orange-600 px-4 py-1 rounded-full hover:bg-orange-600 hover:text-white ">
+            <i class="fa-solid fa-plus"></i>
+            <h5>Add</h5>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script>
+    // locomotive scroll smooth scroll true
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('#main'),
+      smooth: true
+    });
+
+    // swipper js for infinite swipper
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+    document.querySelector(".menuIcon").addEventListener("click", () => {
+      document.querySelector(".menuBar").style.right = 0;
+
+    })
+
+    document.querySelector(".closeMenu").addEventListener("click", () => {
+      document.querySelector(".menuBar").style.right = '-40%';
+
+    })
+
+    
+
+
+
+    
+  </script>
 </body>
+
 </html>
