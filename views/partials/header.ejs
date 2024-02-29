@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/aebaa313fa.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    .logo h3 {
+      font-family: "Pacifico", cursive;
+    }
+    .links a{
+      transition: all ease 0.4s;
+    }
+    /* swipper for page 1  */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content h2{
+      font-family: "Pacifico", cursive;
+    }
+  </style>
+</head>
+
+
+<body>
+    <div class="navbar h-[10%] w-[100%] bg-zinc-100 flex items-center justify-between px-[4vw] text-black">
+        <div class="logo flex items-center"><img class="h-16"
+            src="https://imgs.search.brave.com/OoO60jggTXtZpTWQnbONEaj9PpfvDvG03xXlgWfoN7U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9y/VExuUm9MVDgucG5n">
+          <h3 class="leading-tight text-xl">Pizza You <br><span>Love</span></h3>
+        </div>
+       <div  class="sidebar flex items-center gap-6 z-[9]">
+          <a style="transition: all ease 0.4s;" href="/home" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Home</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Offers</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">My Orders</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Logout</a>
+        <a href="/cart"><i class="fa-solid fa-cart-shopping cursor-pointer text-2xl px-3 py-2  rounded-full bg-yellow-600"></i></a>
+       </div>
+      </div>
+
+
+
+

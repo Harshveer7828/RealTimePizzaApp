@@ -56,9 +56,12 @@
             src="https://imgs.search.brave.com/OoO60jggTXtZpTWQnbONEaj9PpfvDvG03xXlgWfoN7U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9y/VExuUm9MVDgucG5n">
           <h3 class="leading-tight text-xl">Pizza You <br><span>Love</span></h3>
         </div>
-       <div class="sidebar flex items-center z-[9]">
-        <i class="fa-solid fa-bars menuIcon cursor-pointer text-3xl px-3 py-2 rounded-full"></i>
-        <i class="fa-solid fa-cart-shopping cursor-pointer text-2xl px-3 py-2  rounded-full bg-yellow-600"></i>
+       <div  class="sidebar flex items-center gap-6 z-[9]">
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Home</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Offers</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">My Orders</a>
+          <a style="transition: all ease 0.4s;" href="#" class="text-lg hover:text-orange-600 hover:scale-[1.1]">Logout</a>
+        <a href="/cart"><i class="fa-solid fa-cart-shopping cursor-pointer text-2xl px-3 py-2  rounded-full bg-yellow-600"></i></a>
        </div>
       </div>
       <!-- center elements of page 1 -->
@@ -67,7 +70,7 @@
          <div class="content mt-[30vh] ml-[10vw]">
           <h1 class="text-8xl font-bold">Da Pizzeria</h1>
           <h2 class="text-5xl mt-1">Feeling Hungry! </h2>
-          <button class="text-2xl mt-5 bg-zinc-900 text-white p-4 rounded-full">Order Now</button>
+          <button style="transition: all ease 0.4s;" class="text-2xl mt-5 bg-zinc-900 text-white p-4 rounded-full hover:scale-[0.9]">Order Now</button>
          </div>
         </div>
         <div class="right h-full w-[45%] px-4">
@@ -83,16 +86,7 @@
       </div>
 
       <!-- side page or say menu page -->
-      <div style="transition: all ease 0.4s;"
-        class="menuBar h-[100%] w-[40%] bg-zinc-800 absolute top-0 right-[-60%] flex items-center justify-center border rounded-xl border-zinc-600 z-[9]">
-        <i class="fa-solid fa-xmark closeMenu absolute cursor-pointer absolute top-4 right-12 text-4xl text-white bg-zinc-600 rounded-full px-4 py-2"></i>
-        <div class="links flex flex-col text-white text-center gap-6 ">
-          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Home</a>
-          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Offers</a>
-          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">My Orders</a>
-          <a href="#" class="text-6xl hover:text-pink-600 hover:text-7xl">Logout</a>
-        </div>
-      </div>
+     
     </div>
     <div class="page2 min-h-[100vh] w-[100vw] bg-white p-12 grid grid-cols-4 p-12" >
       <div class="card h-[50vh] w-[20vw] flex flex-col items-center text-center">
@@ -251,21 +245,6 @@
 
 
 
-    document.querySelector(".menuIcon").addEventListener("click", () => {
-      document.querySelector(".menuBar").style.right = 0;
-
-    })
-
-    document.querySelector(".closeMenu").addEventListener("click", () => {
-      document.querySelector(".menuBar").style.right = '-40%';
-
-    })
-
-    
-
-
-
-    
   </script>
 </body>
 

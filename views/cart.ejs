@@ -1,0 +1,38 @@
+<% include ./partials/header.ejs %>
+    <!-- this is the part when you dont have any cart item or your cart is empty -->
+
+    <!-- <div class="h-[80vh] w-full flex items-center flex-col justify-center text-center">
+        <h1 class="text-lg font-bold text-zinc-600">You Don't Have Any Item In Your Cart ☹️</h1>
+        <img src="https://imgs.search.brave.com/RAtKl5-K45lL-3gi2ZJfWSUKmNXVURHvOiu8wpKRLtg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvdGhlLWdp/cmwtaXMtbG9va2lu/Zy1hdC10aGUtZW1w/dHktdHJvbGxleS04/ODM4MDk0LTcyMDE0/MjgucG5nP2Y9d2Vi/cA">
+        <a style="transition: all ease 0.4s;" class="bg-zinc-900 rounded-full font-bold text-white px-3 py-2 hover:bg-zinc-600 hover:scale-[1.1] " href="/home"><button>Order Now</button></a>
+    </div> -->
+
+    <!-- When your cart is not  empty and have some items -->
+
+    <div class="container flex items-center justify-center mt-12">
+        <div class="h-[60vh] w-[60vw] flex flex-col relative">
+            <h1 class="flex items-center gap-2 font-bold text-zinc-700 text-2xl"><i class="fa-solid fa-cart-shopping text-2xl"></i>Order summary</h1>
+            <hr class="mt-2">
+            <div class="itemsContainer flex items-center justify-between mt-3">
+                <div class="item flex items-center gap-2">
+                    <img class="h-[20vh] w-[11vw]" src="https://media.gettyimages.com/id/184928432/photo/pizza-from-the-top-pepperoni-cheese.jpg?s=612x612&w=0&k=20&c=wkC4yrZLcvHqg-9kQtRb1wan_z15eiO1Z297OFSuxpg=" >
+                    <div class="iteminfo flex flex-col">
+                        <h2 class="text-xl font-bold">Marinara</h2>
+                        <h4 class="text-sm text-zinc-600">MEDIUM</h4>
+                    </div>
+                </div>
+                <h4>1Pcs</h4>
+                <h4 class="font-bold">$200</h4>
+            </div>
+            <hr class="mt-5">
+            <h3 class="text-right font-bold text-zinc-900 text-sm mt-2">Total Amount: <span class="text-orange-600 text-xl">$200</span></h3>
+            <form class="flex flex-col gap-2 items-end relative mt-2" action="#" method="post">
+                <input class="border border-zinc-400 w-1/5 px-2 py-1 rounded-md" type="text" name="address" placeholder="Address" required>
+                <input class="border border-zinc-400 w-1/5 px-2 py-1 rounded-md" type="number" name="Phonenumber" placeholder="Phone Number" >
+                <input type="submit" value="Place Order" class="bg-orange-600 text-white text-lg rounded-full px-4 py-2 mt-2">
+            </form>
+        </div>
+    </div>
+
+
+    <%include ./partials/footer.ejs%>
