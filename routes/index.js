@@ -5,6 +5,9 @@ var router = express.Router();
 router.get('/home', function(req, res, next) {
   res.render('home');
 });
+router.get('/', function(req, res, next) {
+  res.render('auth/login.ejs');
+});
 router.get('/cart', function(req, res, next) {
   res.render('cart');
 });

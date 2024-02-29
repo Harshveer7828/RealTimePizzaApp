@@ -7,9 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="wrapper h-screen w-screen bg-zinc-600">
-        <div class="h-[40vh] w-[20vw] bg-orange-600">
-            
+    <div class="wrapper h-screen w-screen bg-orange-600 flex items-center justify-center ">
+        <img class="absolute top-0 left-0 h-full w-full object-cover " src="https://img.freepik.com/premium-photo/set-pizza-italian-cuisine-top-view-wooden-background-copy-space_187166-3009.jpg?size=626&ext=jpg" alt="">
+        <div class="h-[40vh] w-[20vw] bg-zinc-900 rounded-md relative z-[9]">
+            <form action="" method="post" class="flex flex-col items-center gap-4 text-white">
+                <h1 class="text-white font-bold text-4xl mt-2">Login Here</h1>
+                <input class="bg-transparent text-white border px-2 py-2 rounded-md mt-8" type="number" name="number" placeholder="Enter your Phone No">
+                <input class="bg-transparent text-white border px-2 py-2 rounded-md "  type="password" name="password" placeholder="Password">
+                <input class="bg-orange-600 rounded-full text-lg px-3 py-1 font-bold" type="submit" value="Login">
+            </form>
         </div>
     </div>
 </body>
